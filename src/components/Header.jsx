@@ -22,7 +22,7 @@ export default function Header() {
         <a href="#home" className="flex items-center gap-3">
           <Logo className="h-10 w-10 shrink-0" />
           <span className="hidden text-left leading-tight sm:block">
-            <span className="block font-semibold text-gold-light">Arasamaram Aalamaram</span>
+            <span className="block font-semibold text-emerald-300">Arasamaram Aalamaram</span>
             <span className="block text-xs tracking-wide text-gray-400">Enterprises</span>
           </span>
         </a>
@@ -32,7 +32,7 @@ export default function Header() {
             <a
               key={item.key}
               href={item.href}
-              className="text-sm font-medium text-gray-300 transition hover:text-gold"
+              className="text-sm font-medium text-gray-300 transition hover:text-emerald-500"
             >
               {t(`nav.${item.key}`)}
             </a>
@@ -43,7 +43,7 @@ export default function Header() {
           <LanguageSwitcher />
           <a
             href="#contact"
-            className="hidden rounded-full bg-gold px-5 py-2 text-sm font-semibold text-ink transition hover:bg-gold-light md:block"
+            className="hidden rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-ink transition hover:bg-emerald-300 md:block"
           >
             {t('nav.cta')}
           </a>
@@ -64,7 +64,7 @@ export default function Header() {
               key={item.key}
               href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="rounded-lg px-3 py-2.5 text-sm font-medium text-gray-300 transition hover:bg-panel hover:text-gold"
+              className="rounded-lg px-3 py-2.5 text-sm font-medium text-gray-300 transition hover:bg-panel hover:text-emerald-500"
             >
               {t(`nav.${item.key}`)}
             </a>

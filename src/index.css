@@ -5,13 +5,10 @@
   --font-tamil: "Noto Sans Tamil", "Poppins", system-ui, sans-serif;
   --font-hindi: "Noto Sans Devanagari", "Poppins", system-ui, sans-serif;
 
-  --color-ink: #0b0d12;
-  --color-charcoal: #12141c;
-  --color-panel: #171a24;
-  --color-line: #262a38;
-  --color-gold: #d4af6a;
-  --color-gold-light: #ead9b3;
-  --color-azure: #3b6fd6;
+  --color-ink: #0a0f0d;
+  --color-charcoal: #101713;
+  --color-panel: #151f1a;
+  --color-line: #24332b;
 }
 
 html {
@@ -33,6 +30,6 @@ body[data-lang="hi"] {
 }
 
 ::selection {
-  background: var(--color-gold);
+  background: #34d399;
   color: var(--color-ink);
 }

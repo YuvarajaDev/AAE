@@ -18,9 +18,9 @@ export default function Industries() {
           {industries.map(({ key, icon: Icon }) => (
             <div
               key={key}
-              className="group flex flex-col items-center gap-3 rounded-2xl border border-line/60 bg-panel/40 px-4 py-7 text-center transition hover:-translate-y-1 hover:border-gold/50 hover:bg-panel"
+              className="group flex flex-col items-center gap-3 rounded-2xl border border-line/60 bg-panel/40 px-4 py-7 text-center transition hover:-translate-y-1 hover:border-emerald-500/50 hover:bg-panel"
             >
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold transition group-hover:bg-gold/20">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-500 transition group-hover:bg-emerald-500/20">
                 <Icon className="h-6 w-6" strokeWidth={1.75} />
               </span>
               <span className="text-sm font-medium leading-snug text-gray-200">

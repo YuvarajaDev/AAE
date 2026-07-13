@@ -31,7 +31,7 @@ export default function Contact() {
                 key={title}
                 className="flex items-start gap-4 rounded-2xl border border-line/60 bg-panel/40 p-5"
               >
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-500">
                   <Icon className="h-5 w-5" strokeWidth={1.75} />
                 </span>
                 <div>
@@ -51,7 +51,7 @@ export default function Contact() {
                 id="name"
                 type="text"
                 required
-                className="w-full rounded-lg border border-line bg-ink px-4 py-2.5 text-sm text-white outline-none transition focus:border-gold"
+                className="w-full rounded-lg border border-line bg-ink px-4 py-2.5 text-sm text-white outline-none transition focus:border-emerald-500"
               />
             </div>
             <div>
@@ -62,7 +62,7 @@ export default function Contact() {
                 id="email"
                 type="email"
                 required
-                className="w-full rounded-lg border border-line bg-ink px-4 py-2.5 text-sm text-white outline-none transition focus:border-gold"
+                className="w-full rounded-lg border border-line bg-ink px-4 py-2.5 text-sm text-white outline-none transition focus:border-emerald-500"
               />
             </div>
             <div>
@@ -73,12 +73,12 @@ export default function Contact() {
                 id="message"
                 rows={4}
                 required
-                className="w-full resize-none rounded-lg border border-line bg-ink px-4 py-2.5 text-sm text-white outline-none transition focus:border-gold"
+                className="w-full resize-none rounded-lg border border-line bg-ink px-4 py-2.5 text-sm text-white outline-none transition focus:border-emerald-500"
               />
             </div>
             <button
               type="submit"
-              className="w-full rounded-full bg-gold py-3 text-sm font-semibold text-ink transition hover:bg-gold-light"
+              className="w-full rounded-full bg-emerald-500 py-3 text-sm font-semibold text-ink transition hover:bg-emerald-300"
             >
               {t('contact.formSubmit')}
             </button>

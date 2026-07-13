@@ -17,20 +17,20 @@ export default function Hero() {
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
           backgroundImage:
-            'radial-gradient(circle at 20% 20%, rgba(212,175,106,0.12), transparent 40%), radial-gradient(circle at 80% 0%, rgba(59,111,214,0.15), transparent 45%)',
+            'radial-gradient(circle at 20% 20%, rgba(16,185,129,0.14), transparent 40%), radial-gradient(circle at 80% 0%, rgba(20,184,166,0.16), transparent 45%)',
         }}
       />
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.06]"
         style={{
           backgroundImage:
-            'linear-gradient(#d4af6a 1px, transparent 1px), linear-gradient(90deg, #d4af6a 1px, transparent 1px)',
+            'linear-gradient(#10b981 1px, transparent 1px), linear-gradient(90deg, #10b981 1px, transparent 1px)',
           backgroundSize: '48px 48px',
         }}
       />
 
       <div className="relative mx-auto max-w-5xl px-5 text-center sm:px-8">
-        <span className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-panel/60 px-4 py-1.5 text-xs font-medium tracking-wide text-gold-light">
+        <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-panel/60 px-4 py-1.5 text-xs font-medium tracking-wide text-emerald-300">
           <Sparkles className="h-3.5 w-3.5" />
           {t('hero.eyebrow')}
         </span>
@@ -46,14 +46,14 @@ export default function Hero() {
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href="#industries"
-            className="inline-flex items-center gap-2 rounded-full bg-gold px-7 py-3 text-sm font-semibold text-ink transition hover:bg-gold-light"
+            className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-7 py-3 text-sm font-semibold text-ink transition hover:bg-emerald-300"
           >
             {t('hero.ctaPrimary')}
             <ArrowRight className="h-4 w-4" />
           </a>
           <a
             href="#innovation"
-            className="inline-flex items-center gap-2 rounded-full border border-gray-600 px-7 py-3 text-sm font-semibold text-gray-200 transition hover:border-gold hover:text-gold"
+            className="inline-flex items-center gap-2 rounded-full border border-gray-600 px-7 py-3 text-sm font-semibold text-gray-200 transition hover:border-emerald-500 hover:text-emerald-500"
           >
             {t('hero.ctaSecondary')}
           </a>
@@ -66,7 +66,7 @@ export default function Hero() {
               className="rounded-2xl border border-line/60 bg-panel/40 px-4 py-5 backdrop-blur-sm"
             >
               <dt className="sr-only">{stat.label}</dt>
-              <dd className="text-2xl font-bold text-gold sm:text-3xl">{stat.value}</dd>
+              <dd className="text-2xl font-bold text-emerald-500 sm:text-3xl">{stat.value}</dd>
               <dd className="mt-1 text-xs text-gray-400 sm:text-sm">{stat.label}</dd>
             </div>
           ))}

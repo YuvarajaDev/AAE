@@ -30,7 +30,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <Logo className="h-10 w-10" />
-              <span className="font-semibold text-gold-light">Arasamaram Aalamaram</span>
+              <span className="font-semibold text-emerald-300">Arasamaram Aalamaram</span>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">{t('footer.tagline')}</p>
             <div className="mt-5 flex gap-3">
@@ -39,7 +39,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-gray-400 transition hover:border-gold hover:text-gold"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-gray-400 transition hover:border-emerald-500 hover:text-emerald-500"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {NAV_ITEMS.map((item) => (
                 <li key={item.key}>
-                  <a href={item.href} className="text-sm text-gray-400 transition hover:text-gold">
+                  <a href={item.href} className="text-sm text-gray-400 transition hover:text-emerald-500">
                     {t(`nav.${item.key}`)}
                   </a>
                 </li>
@@ -65,7 +65,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5">
               {featuredIndustries.map((ind) => (
                 <li key={ind.key}>
-                  <a href="#industries" className="text-sm text-gray-400 transition hover:text-gold">
+                  <a href="#industries" className="text-sm text-gray-400 transition hover:text-emerald-500">
                     {t(`industries.list.${ind.key}`)}
                   </a>
                 </li>
