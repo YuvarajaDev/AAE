@@ -18,7 +18,7 @@ export default function Innovation() {
   }
 
   return (
-    <section id="innovation" className="bg-sage py-24">
+    <section id="innovation" className="bg-sage pt-24 pb-12">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow={t('innovation.eyebrow')}

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { ArrowRight, Sparkles } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export default function Hero() {
   const { t } = useTranslation()
@@ -19,7 +19,7 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-5xl px-5 text-center sm:px-8">
         <span className="inline-flex items-center gap-2 rounded-full border border-line bg-cream/70 px-4 py-1.5 text-xs font-medium tracking-wide text-forest">
-          <Sparkles className="h-3.5 w-3.5" />
+          <span className="font-tamil text-base font-bold normal-case text-forest">அ</span>
           {t('hero.eyebrow')}
         </span>
 
