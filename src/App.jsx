@@ -17,7 +17,7 @@ function App() {
   }, [i18n.language])
 
   return (
-    <div className="min-h-screen bg-ink">
+    <div className="min-h-screen bg-sage">
       <Header />
       <main>
         <Hero />

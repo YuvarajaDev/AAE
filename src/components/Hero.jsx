@@ -12,48 +12,36 @@ export default function Hero() {
   ]
 
   return (
-    <section id="home" className="relative overflow-hidden bg-ink pt-32 pb-24 sm:pt-40 sm:pb-32">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-40"
-        style={{
-          backgroundImage:
-            'radial-gradient(circle at 20% 20%, rgba(16,185,129,0.14), transparent 40%), radial-gradient(circle at 80% 0%, rgba(20,184,166,0.16), transparent 45%)',
-        }}
-      />
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.06]"
-        style={{
-          backgroundImage:
-            'linear-gradient(#10b981 1px, transparent 1px), linear-gradient(90deg, #10b981 1px, transparent 1px)',
-          backgroundSize: '48px 48px',
-        }}
-      />
+    <section id="home" className="relative overflow-hidden bg-sage pt-32 pb-24 sm:pt-40 sm:pb-32">
+      <div className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-cream/70 blur-2xl sm:h-96 sm:w-96" />
+      <div className="pointer-events-none absolute -right-16 top-20 h-56 w-56 rounded-full bg-terracotta/15 blur-2xl sm:h-72 sm:w-72" />
+      <div className="pointer-events-none absolute bottom-0 left-1/3 h-64 w-64 rounded-full bg-sage-deep/80 blur-3xl" />
 
       <div className="relative mx-auto max-w-5xl px-5 text-center sm:px-8">
-        <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-panel/60 px-4 py-1.5 text-xs font-medium tracking-wide text-emerald-300">
+        <span className="inline-flex items-center gap-2 rounded-full border border-line bg-cream/70 px-4 py-1.5 text-xs font-medium tracking-wide text-forest">
           <Sparkles className="h-3.5 w-3.5" />
           {t('hero.eyebrow')}
         </span>
 
-        <h1 className="mt-6 whitespace-pre-line text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+        <h1 className="mt-6 whitespace-pre-line text-4xl font-semibold leading-tight text-ink sm:text-5xl lg:text-6xl">
           {t('hero.heading')}
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-gray-400 sm:text-lg">
+        <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
           {t('hero.subheading')}
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href="#industries"
-            className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-7 py-3 text-sm font-semibold text-ink transition hover:bg-emerald-300"
+            className="inline-flex items-center gap-2 rounded-full bg-terracotta px-7 py-3 text-sm font-semibold text-cream transition hover:bg-terracotta-dark"
           >
             {t('hero.ctaPrimary')}
             <ArrowRight className="h-4 w-4" />
           </a>
           <a
             href="#innovation"
-            className="inline-flex items-center gap-2 rounded-full border border-gray-600 px-7 py-3 text-sm font-semibold text-gray-200 transition hover:border-emerald-500 hover:text-emerald-500"
+            className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-7 py-3 text-sm font-semibold text-ink transition hover:border-forest hover:text-forest"
           >
             {t('hero.ctaSecondary')}
           </a>
@@ -63,11 +51,11 @@ export default function Hero() {
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-2xl border border-line/60 bg-panel/40 px-4 py-5 backdrop-blur-sm"
+              className="rounded-3xl border border-line bg-cream/80 px-4 py-5 backdrop-blur-sm"
             >
               <dt className="sr-only">{stat.label}</dt>
-              <dd className="text-2xl font-bold text-emerald-500 sm:text-3xl">{stat.value}</dd>
-              <dd className="mt-1 text-xs text-gray-400 sm:text-sm">{stat.label}</dd>
+              <dd className="text-2xl font-bold text-terracotta sm:text-3xl">{stat.value}</dd>
+              <dd className="mt-1 text-xs text-muted sm:text-sm">{stat.label}</dd>
             </div>
           ))}
         </dl>

@@ -16,7 +16,7 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="bg-ink py-24">
+    <section id="contact" className="bg-sage-deep py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow={t('contact.eyebrow')}
@@ -29,56 +29,56 @@ export default function Contact() {
             {details.map(({ icon: Icon, title, value }) => (
               <div
                 key={title}
-                className="flex items-start gap-4 rounded-2xl border border-line/60 bg-panel/40 p-5"
+                className="flex items-start gap-4 rounded-3xl border border-line bg-cream/70 p-5"
               >
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-500">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-terracotta/15 text-terracotta">
                   <Icon className="h-5 w-5" strokeWidth={1.75} />
                 </span>
                 <div>
-                  <h3 className="text-sm font-semibold text-white">{title}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-gray-400">{value}</p>
+                  <h3 className="text-sm font-semibold text-ink">{title}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-muted">{value}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4 rounded-2xl border border-line/60 bg-panel/40 p-6">
+          <form onSubmit={handleSubmit} className="space-y-4 rounded-3xl border border-line bg-cream/70 p-6">
             <div>
-              <label htmlFor="name" className="mb-1.5 block text-xs font-medium text-gray-400">
+              <label htmlFor="name" className="mb-1.5 block text-xs font-medium text-muted">
                 {t('contact.formName')}
               </label>
               <input
                 id="name"
                 type="text"
                 required
-                className="w-full rounded-lg border border-line bg-ink px-4 py-2.5 text-sm text-white outline-none transition focus:border-emerald-500"
+                className="w-full rounded-lg border border-line bg-sage px-4 py-2.5 text-sm text-ink outline-none transition focus:border-terracotta"
               />
             </div>
             <div>
-              <label htmlFor="email" className="mb-1.5 block text-xs font-medium text-gray-400">
+              <label htmlFor="email" className="mb-1.5 block text-xs font-medium text-muted">
                 {t('contact.formEmail')}
               </label>
               <input
                 id="email"
                 type="email"
                 required
-                className="w-full rounded-lg border border-line bg-ink px-4 py-2.5 text-sm text-white outline-none transition focus:border-emerald-500"
+                className="w-full rounded-lg border border-line bg-sage px-4 py-2.5 text-sm text-ink outline-none transition focus:border-terracotta"
               />
             </div>
             <div>
-              <label htmlFor="message" className="mb-1.5 block text-xs font-medium text-gray-400">
+              <label htmlFor="message" className="mb-1.5 block text-xs font-medium text-muted">
                 {t('contact.formMessage')}
               </label>
               <textarea
                 id="message"
                 rows={4}
                 required
-                className="w-full resize-none rounded-lg border border-line bg-ink px-4 py-2.5 text-sm text-white outline-none transition focus:border-emerald-500"
+                className="w-full resize-none rounded-lg border border-line bg-sage px-4 py-2.5 text-sm text-ink outline-none transition focus:border-terracotta"
               />
             </div>
             <button
               type="submit"
-              className="w-full rounded-full bg-emerald-500 py-3 text-sm font-semibold text-ink transition hover:bg-emerald-300"
+              className="w-full rounded-full bg-terracotta py-3 text-sm font-semibold text-cream transition hover:bg-terracotta-dark"
             >
               {t('contact.formSubmit')}
             </button>

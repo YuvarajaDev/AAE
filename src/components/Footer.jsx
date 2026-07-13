@@ -24,22 +24,22 @@ export default function Footer() {
   const featuredIndustries = industries.slice(0, 6)
 
   return (
-    <footer className="border-t border-line/60 bg-charcoal">
+    <footer className="bg-forest text-cream/80">
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-3">
               <Logo className="h-10 w-10" />
-              <span className="font-semibold text-emerald-300">Arasamaram Aalamaram</span>
+              <span className="font-semibold text-cream">Arasamaram Aalamaram</span>
             </div>
-            <p className="mt-4 text-sm leading-relaxed text-gray-400">{t('footer.tagline')}</p>
+            <p className="mt-4 text-sm leading-relaxed text-cream/70">{t('footer.tagline')}</p>
             <div className="mt-5 flex gap-3">
               {SOCIALS.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-gray-400 transition hover:border-emerald-500 hover:text-emerald-500"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-cream/25 text-cream/70 transition hover:border-terracotta hover:text-terracotta"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
@@ -48,11 +48,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-white">{t('footer.quickLinks')}</h3>
+            <h3 className="text-sm font-semibold text-cream">{t('footer.quickLinks')}</h3>
             <ul className="mt-4 space-y-2.5">
               {NAV_ITEMS.map((item) => (
                 <li key={item.key}>
-                  <a href={item.href} className="text-sm text-gray-400 transition hover:text-emerald-500">
+                  <a href={item.href} className="text-sm text-cream/70 transition hover:text-terracotta">
                     {t(`nav.${item.key}`)}
                   </a>
                 </li>
@@ -61,11 +61,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-white">{t('footer.industriesTitle')}</h3>
+            <h3 className="text-sm font-semibold text-cream">{t('footer.industriesTitle')}</h3>
             <ul className="mt-4 space-y-2.5">
               {featuredIndustries.map((ind) => (
                 <li key={ind.key}>
-                  <a href="#industries" className="text-sm text-gray-400 transition hover:text-emerald-500">
+                  <a href="#industries" className="text-sm text-cream/70 transition hover:text-terracotta">
                     {t(`industries.list.${ind.key}`)}
                   </a>
                 </li>
@@ -74,8 +74,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-white">{t('footer.connect')}</h3>
-            <ul className="mt-4 space-y-2.5 text-sm text-gray-400">
+            <h3 className="text-sm font-semibold text-cream">{t('footer.connect')}</h3>
+            <ul className="mt-4 space-y-2.5 text-sm text-cream/70">
               <li>{t('contact.address')}</li>
               <li>{t('contact.phone')}</li>
               <li>{t('contact.email')}</li>
@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-line/60 pt-6 text-xs text-gray-500 sm:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-cream/15 pt-6 text-xs text-cream/50 sm:flex-row">
           <p>© {year} Arasamaram Aalamaram Enterprises. {t('footer.rights')}</p>
           <p>{t('footer.disclaimer')}</p>
         </div>

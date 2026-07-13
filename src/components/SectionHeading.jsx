@@ -3,9 +3,9 @@ export default function SectionHeading({ eyebrow, heading, subheading, align = '
 
   return (
     <div className={`max-w-2xl ${alignment}`}>
-      <span className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-500">{eyebrow}</span>
-      <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">{heading}</h2>
-      {subheading && <p className="mt-4 text-base leading-relaxed text-gray-400">{subheading}</p>}
+      <span className="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta">{eyebrow}</span>
+      <h2 className="mt-3 text-3xl font-semibold text-ink sm:text-4xl">{heading}</h2>
+      {subheading && <p className="mt-4 text-base leading-relaxed text-muted">{subheading}</p>}
     </div>
   )
 }
