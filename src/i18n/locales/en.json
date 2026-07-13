@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "home": "Home",
+    "industries": "Industries",
+    "innovation": "Innovation",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Get in Touch"
+  },
+  "hero": {
+    "eyebrow": "A Multi-Industry Enterprise Group",
+    "heading": "Rooted in Heritage.\nBranching into Tomorrow.",
+    "subheading": "Arasamaram Aalamaram Enterprises grows across 19 industries and 13 frontier technologies — a single trunk, countless branches, one shade for every venture.",
+    "ctaPrimary": "Explore Our Industries",
+    "ctaSecondary": "Our Innovation Arm",
+    "statIndustries": "Industries",
+    "statDomains": "Tech Domains",
+    "statYears": "Years of Legacy",
+    "statCountries": "Countries"
+  },
+  "industries": {
+    "eyebrow": "What We Do",
+    "heading": "Industries We Serve",
+    "subheading": "From tradition-bound sectors to modern commerce, our enterprises stand tall across the economic landscape.",
+    "list": {
+      "bankingFinance": "Banking & Finance",
+      "healthcare": "Healthcare",
+      "retail": "Retail",
+      "machineries": "Machineries",
+      "paperProduct": "Paper Products",
+      "jewellery": "Jewellery",
+      "furnitures": "Furniture",
+      "textileFabric": "Textile & Fabric",
+      "engineering": "Engineering",
+      "pharmaceutical": "Pharmaceutical",
+      "mineralsMetal": "Minerals & Metal",
+      "realEstate": "Real Estate",
+      "hospitality": "Hospitality",
+      "entertainment": "Entertainment",
+      "oilGas": "Oil & Gas",
+      "education": "Education",
+      "cosmetic": "Cosmetic",
+      "energyPower": "Energy & Power",
+      "itIct": "I.T. & ICT"
+    }
+  },
+  "innovation": {
+    "eyebrow": "Where We're Headed",
+    "heading": "Innovation & Future Domains",
+    "subheading": "Beyond legacy industries, our research and venture arm is planting seeds in the technologies shaping the next century.",
+    "list": {
+      "finance": { "title": "FinTech", "desc": "Digital banking, payments, and investment platforms built for scale." },
+      "gaming": { "title": "Gaming", "desc": "Interactive entertainment and immersive game studios." },
+      "astronomy": { "title": "Astronomy", "desc": "Space-tech research and satellite-driven ventures." },
+      "healthcare": { "title": "Healthcare Tech", "desc": "Diagnostics, telemedicine, and AI-assisted patient care." },
+      "transport": { "title": "Transport", "desc": "Smart logistics and next-gen mobility solutions." },
+      "agriculture": { "title": "Agri-Tech", "desc": "Precision farming and sustainable agricultural systems." },
+      "education": { "title": "EdTech", "desc": "Digital learning platforms and skill development tools." },
+      "ecommerce": { "title": "E-Commerce", "desc": "Omnichannel retail and digital marketplace infrastructure." },
+      "entertainment": { "title": "Entertainment", "desc": "Media production and content distribution networks." },
+      "robotics": { "title": "Robotics", "desc": "Automation and intelligent robotic systems for industry." },
+      "automotive": { "title": "Automotive", "desc": "Connected vehicles and mobility engineering." },
+      "socialMedia": { "title": "Social Media", "desc": "Community platforms and digital engagement products." },
+      "dataSecurity": { "title": "Data Security", "desc": "Cybersecurity, encryption, and enterprise data protection." }
+    }
+  },
+  "about": {
+    "eyebrow": "Our Story",
+    "heading": "A Name Rooted in Two Sacred Trees",
+    "paragraph1": "Arasamaram Aalamaram Enterprises takes its name from two of the most revered trees in Tamil culture — the Arasamaram (Peepal) and the Aalamaram (Banyan) — symbols of endurance, shelter, and growth across generations.",
+    "paragraph2": "Just as these trees spread wide canopies while staying rooted in tradition, our enterprise has grown from humble beginnings into a diversified group spanning finance, healthcare, manufacturing, and frontier technology — always sheltering the communities and partners who grow with us.",
+    "paragraph3": "Today, we operate across 19 core industries and are actively investing in 13 emerging technology domains, guided by a simple philosophy: strong roots enable fearless branches.",
+    "valueTitle1": "Heritage",
+    "valueDesc1": "Decades of trust built on tradition and integrity.",
+    "valueTitle2": "Diversity",
+    "valueDesc2": "A presence across nearly every major industry.",
+    "valueTitle3": "Innovation",
+    "valueDesc3": "Actively building the technologies of tomorrow."
+  },
+  "contact": {
+    "eyebrow": "Let's Talk",
+    "heading": "Get in Touch",
+    "subheading": "Whether you're exploring a partnership, an investment, or a career — our team is ready to hear from you.",
+    "formName": "Your Name",
+    "formEmail": "Email Address",
+    "formMessage": "Your Message",
+    "formSubmit": "Send Message",
+    "addressTitle": "Head Office",
+    "address": "24, Nadar Street, Anna Nagar, Chennai, Tamil Nadu 600040, India",
+    "phoneTitle": "Phone",
+    "phone": "+91 44 2345 6789",
+    "emailTitle": "Email",
+    "email": "contact@arasamaram-aalamaram.com"
+  },
+  "footer": {
+    "tagline": "One trunk. Countless branches. Every industry, one shade.",
+    "quickLinks": "Quick Links",
+    "industriesTitle": "Industries",
+    "connect": "Connect",
+    "rights": "All rights reserved.",
+    "disclaimer": "This is a demo landing page with placeholder content for design purposes."
+  }
+}
