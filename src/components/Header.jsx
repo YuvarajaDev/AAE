@@ -1,15 +1,16 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import Logo from './Logo'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const NAV_ITEMS = [
-  { key: 'home', href: '#home' },
-  { key: 'industries', href: '#industries' },
-  { key: 'innovation', href: '#innovation' },
-  { key: 'about', href: '#about' },
-  { key: 'contact', href: '#contact' },
+  { key: 'home', href: '/#home' },
+  { key: 'industries', href: '/#industries' },
+  { key: 'innovation', href: '/#innovation' },
+  { key: 'about', href: '/#about' },
+  { key: 'contact', href: '/#contact' },
 ]
 
 export default function Header() {
@@ -17,22 +18,22 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-line/70 bg-sage/85 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-gold/20 bg-navy/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
-        <a href="#home" className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <Logo className="h-10 w-10 shrink-0" />
           <span className="hidden text-left leading-tight sm:block">
-            <span className="block font-semibold text-ink">Arasamaram Aalamaram</span>
-            <span className="block text-xs tracking-wide text-muted">Enterprises</span>
+            <span className="block font-semibold text-gold-light">Arasamaram Aalamaram</span>
+            <span className="block text-xs tracking-wide text-cream/60">Enterprises</span>
           </span>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.key}
               href={item.href}
-              className="text-sm font-medium text-ink/80 transition hover:text-terracotta"
+              className="text-sm font-medium text-cream/80 transition hover:text-gold"
             >
               {t(`nav.${item.key}`)}
             </a>
@@ -42,13 +43,13 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
           <a
-            href="#contact"
-            className="hidden rounded-full bg-terracotta px-5 py-2 text-sm font-semibold text-cream transition hover:bg-terracotta-dark md:block"
+            href="/#contact"
+            className="hidden rounded-full bg-gold px-5 py-2 text-sm font-semibold text-navy transition hover:bg-gold-light md:block"
           >
             {t('nav.cta')}
           </a>
           <button
-            className="text-ink lg:hidden"
+            className="text-cream lg:hidden"
             onClick={() => setMenuOpen((o) => !o)}
             aria-label="Toggle menu"
           >
@@ -58,13 +59,13 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <nav className="flex flex-col gap-1 border-t border-line/70 bg-sage px-5 py-4 lg:hidden">
+        <nav className="flex flex-col gap-1 border-t border-gold/20 bg-navy px-5 py-4 lg:hidden">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.key}
               href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="rounded-lg px-3 py-2.5 text-sm font-medium text-ink/80 transition hover:bg-cream hover:text-terracotta"
+              className="rounded-lg px-3 py-2.5 text-sm font-medium text-cream/80 transition hover:bg-navy-deep hover:text-gold"
             >
               {t(`nav.${item.key}`)}
             </a>

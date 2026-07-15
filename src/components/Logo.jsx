@@ -4,36 +4,80 @@ export default function Logo({ className = 'h-10 w-10' }) {
       viewBox="0 0 100 100"
       className={className}
       role="img"
-      aria-label="Arasamaram Aalamaram Enterprises logo"
+      aria-label="Arasamaram Aalamaram Enterprises — A Symbol of Trust, Strength & Growth"
     >
-      <rect x="1" y="1" width="98" height="98" rx="16" fill="#f8ecdc" stroke="#3f5a3f" strokeWidth="1.5" />
-      <circle cx="50" cy="18" r="2.6" fill="#d97b4f" />
-      <line x1="50" y1="22" x2="50" y2="30" stroke="#3f5a3f" strokeWidth="1.4" />
+      <circle cx="50" cy="50" r="48" fill="none" stroke="#c9a03f" strokeWidth="1" opacity="0.5" />
+      <circle cx="50" cy="50" r="45" fill="#0e1b30" stroke="#c9a03f" strokeWidth="2.2" />
+
+      <circle cx="50" cy="8.5" r="1.6" fill="#c9a03f" />
+      <line x1="50" y1="10.5" x2="50" y2="15" stroke="#c9a03f" strokeWidth="1.3" />
+
       <path
-        d="M50 28 L74 70 L26 70 Z"
+        d="M50 14 L64 42 L36 42 Z"
         fill="none"
-        stroke="#3f5a3f"
+        stroke="#c9a03f"
         strokeWidth="2.2"
         strokeLinejoin="round"
       />
-      <path
-        d="M50 42 L64 66 L36 66 Z"
-        fill="none"
-        stroke="#d97b4f"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
-      <line x1="26" y1="70" x2="74" y2="70" stroke="#3f5a3f" strokeWidth="2.2" />
-      <ellipse cx="50" cy="80" rx="22" ry="6" fill="none" stroke="#3f5a3f" strokeWidth="1.6" />
+
+      <line x1="34" y1="44" x2="66" y2="44" stroke="#c9a03f" strokeWidth="2.6" strokeLinecap="round" />
+
+      <circle cx="50" cy="29" r="8.5" fill="#0e1b30" stroke="#c9a03f" strokeWidth="1.5" />
       <text
         x="50"
-        y="63"
+        y="32.5"
         textAnchor="middle"
-        fontSize="20"
-        fill="#3f5a3f"
+        fontSize="9"
+        fill="#c9a03f"
         fontFamily="'Noto Sans Tamil', sans-serif"
       >
         அ
+      </text>
+
+      <text
+        x="50"
+        y="59"
+        textAnchor="middle"
+        fontSize="6.2"
+        fontWeight="600"
+        letterSpacing="0.2"
+        fill="#c9a03f"
+        fontFamily="'Poppins', sans-serif"
+      >
+        ARASAMARAM AALAMARAM
+      </text>
+      <text
+        x="50"
+        y="66"
+        textAnchor="middle"
+        fontSize="6.2"
+        fontWeight="600"
+        letterSpacing="0.5"
+        fill="#c9a03f"
+        fontFamily="'Poppins', sans-serif"
+      >
+        ENTERPRISES
+      </text>
+
+      <text
+        x="50"
+        y="75"
+        textAnchor="middle"
+        fontSize="4.6"
+        fill="#e3c877"
+        fontFamily="'Poppins', sans-serif"
+      >
+        A SYMBOL OF TRUST,
+      </text>
+      <text
+        x="50"
+        y="81"
+        textAnchor="middle"
+        fontSize="4.6"
+        fill="#e3c877"
+        fontFamily="'Poppins', sans-serif"
+      >
+        STRENGTH &amp; GROWTH
       </text>
     </svg>
   )

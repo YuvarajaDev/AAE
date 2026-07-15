@@ -27,7 +27,7 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={ref}>
       <button
         onClick={() => setOpen((o) => !o)}
-        className="flex items-center gap-1.5 rounded-full border border-line bg-cream/70 px-3 py-1.5 text-sm text-ink transition hover:border-terracotta/60 hover:bg-cream"
+        className="flex items-center gap-1.5 rounded-full border border-gold/30 bg-navy-deep/60 px-3 py-1.5 text-sm text-gold-light transition hover:border-gold/60 hover:bg-navy-deep"
         aria-haspopup="listbox"
         aria-expanded={open}
       >
@@ -38,7 +38,7 @@ export default function LanguageSwitcher() {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 z-50 mt-2 w-32 overflow-hidden rounded-xl border border-line bg-cream shadow-xl shadow-ink/10"
+          className="absolute right-0 z-50 mt-2 w-32 overflow-hidden rounded-xl border border-gold/20 bg-navy-deep shadow-xl shadow-black/40"
         >
           {LANGUAGES.map((lang) => (
             <li key={lang.code}>
@@ -49,8 +49,8 @@ export default function LanguageSwitcher() {
                   i18n.changeLanguage(lang.code)
                   setOpen(false)
                 }}
-                className={`block w-full px-4 py-2 text-left text-sm transition hover:bg-terracotta/10 ${
-                  lang.code === current.code ? 'text-terracotta font-medium' : 'text-ink/80'
+                className={`block w-full px-4 py-2 text-left text-sm transition hover:bg-gold/10 ${
+                  lang.code === current.code ? 'text-gold font-medium' : 'text-cream/70'
                 }`}
               >
                 {lang.label}

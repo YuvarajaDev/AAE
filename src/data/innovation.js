@@ -1,31 +1,13 @@
-import {
-  Landmark,
-  Gamepad2,
-  Telescope,
-  HeartPulse,
-  Truck,
-  Sprout,
-  GraduationCap,
-  ShoppingCart,
-  Clapperboard,
-  Bot,
-  Car,
-  Share2,
-  ShieldCheck,
-} from 'lucide-react'
+import { Share2, Car, Truck, ShieldCheck, Bot, Sprout, Gamepad2, Telescope, ShoppingCart } from 'lucide-react'
 
 export const innovationDomains = [
-  { key: 'finance', icon: Landmark },
+  { key: 'socialMedia', icon: Share2 },
+  { key: 'automotive', icon: Car },
+  { key: 'transport', icon: Truck },
+  { key: 'dataSecurity', icon: ShieldCheck },
+  { key: 'robotics', icon: Bot },
+  { key: 'agriculture', icon: Sprout },
   { key: 'gaming', icon: Gamepad2 },
   { key: 'astronomy', icon: Telescope },
-  { key: 'healthcare', icon: HeartPulse },
-  { key: 'transport', icon: Truck },
-  { key: 'agriculture', icon: Sprout },
-  { key: 'education', icon: GraduationCap },
   { key: 'ecommerce', icon: ShoppingCart },
-  { key: 'entertainment', icon: Clapperboard },
-  { key: 'robotics', icon: Bot },
-  { key: 'automotive', icon: Car },
-  { key: 'socialMedia', icon: Share2 },
-  { key: 'dataSecurity', icon: ShieldCheck },
 ]

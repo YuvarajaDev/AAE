@@ -1,24 +1,25 @@
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ChevronDown } from 'lucide-react'
 import { innovationDomains } from '../data/innovation'
 import SectionHeading from './SectionHeading'
 
+const DOMAIN_COLORS = [
+  '#455a7a',
+  '#a85f2e',
+  '#3f7d78',
+  '#8b3a3a',
+  '#6d4675',
+  '#6b7a3f',
+  '#c9a03f',
+  '#2f6b4f',
+  '#7a4b45',
+]
+
 export default function Innovation() {
   const { t } = useTranslation()
-  const [openKeys, setOpenKeys] = useState(() => new Set([innovationDomains[0].key]))
-
-  function toggle(key) {
-    setOpenKeys((prev) => {
-      const next = new Set(prev)
-      if (next.has(key)) next.delete(key)
-      else next.add(key)
-      return next
-    })
-  }
 
   return (
-    <section id="innovation" className="bg-sage pt-24 pb-12">
+    <section id="innovation" className="bg-cream-deep pt-24 pb-12">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow={t('innovation.eyebrow')}
@@ -27,44 +28,29 @@ export default function Innovation() {
         />
 
         <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {innovationDomains.map(({ key, icon: Icon }) => {
-            const isOpen = openKeys.has(key)
+          {innovationDomains.map(({ key, icon: Icon }, i) => {
+            const color = DOMAIN_COLORS[i % DOMAIN_COLORS.length]
             return (
-              <button
-                type="button"
+              <Link
                 key={key}
-                onClick={() => toggle(key)}
-                aria-expanded={isOpen}
-                className={`flex w-full flex-col rounded-3xl border p-6 text-left shadow-sm transition ${
-                  isOpen
-                    ? 'border-terracotta/50 bg-cream shadow-terracotta/10'
-                    : 'border-line bg-cream/70 shadow-ink/5 hover:-translate-y-1 hover:border-terracotta/30 hover:bg-cream'
-                }`}
+                to={`/sector/${key}`}
+                className="group flex flex-col rounded-3xl border border-line bg-white/70 p-6 shadow-sm shadow-ink/5 transition hover:-translate-y-1 hover:border-gold/40 hover:bg-white"
               >
                 <div className="flex items-center gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-forest/10 text-forest">
+                  <span
+                    style={{ backgroundColor: `${color}1a`, color }}
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl transition"
+                  >
                     <Icon className="h-5 w-5" strokeWidth={1.75} />
                   </span>
                   <h3 className="flex-1 text-lg font-semibold text-ink">
                     {t(`innovation.list.${key}.title`)}
                   </h3>
-                  <ChevronDown
-                    className={`h-5 w-5 shrink-0 text-muted transition-transform duration-300 ${
-                      isOpen ? 'rotate-180 text-terracotta' : ''
-                    }`}
-                  />
                 </div>
-                <div
-                  className="grid transition-all duration-300 ease-in-out"
-                  style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
-                >
-                  <div className="overflow-hidden">
-                    <p className="mt-4 text-sm leading-relaxed text-muted">
-                      {t(`innovation.list.${key}.desc`)}
-                    </p>
-                  </div>
-                </div>
-              </button>
+                <p className="mt-4 text-sm leading-relaxed text-muted">
+                  {t(`innovation.list.${key}.desc`)}
+                </p>
+              </Link>
             )
           })}
         </div>

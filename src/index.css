@@ -5,15 +5,16 @@
   --font-tamil: "Noto Sans Tamil", "Poppins", system-ui, sans-serif;
   --font-hindi: "Noto Sans Devanagari", "Poppins", system-ui, sans-serif;
 
-  --color-sage: #e6edcd;
-  --color-sage-deep: #d7e2b6;
-  --color-cream: #f8ecdc;
-  --color-ink: #21261b;
-  --color-muted: #5c6350;
-  --color-terracotta: #d97b4f;
-  --color-terracotta-dark: #bf6740;
-  --color-forest: #3f5a3f;
-  --color-line: #cdd7ab;
+  --color-cream: #f7f0e1;
+  --color-cream-deep: #eee2c8;
+  --color-navy: #0e1b30;
+  --color-navy-deep: #0a1424;
+  --color-ink: #211d12;
+  --color-muted: #6b6252;
+  --color-gold: #c9a03f;
+  --color-gold-light: #e3c877;
+  --color-gold-dark: #a9822f;
+  --color-line: #ddcfa6;
 }
 
 html {
@@ -22,7 +23,7 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--color-sage);
+  background-color: var(--color-cream);
   font-family: var(--font-sans);
   color: var(--color-ink);
 }
@@ -36,6 +37,6 @@ body[data-lang="hi"] {
 }
 
 ::selection {
-  background: var(--color-terracotta);
-  color: var(--color-cream);
+  background: var(--color-gold);
+  color: var(--color-navy);
 }
